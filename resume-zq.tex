@@ -1,0 +1,128 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{moderncv}
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJK}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 个人信息
+\firstname{张}
+\familyname{琪}
+\title{个人简历}                      % 可选项、如不需要可删除本行
+\address{海淀区新街口外大街19号}{100875 北京}             % 可选项、如不需要可删除本行
+\mobile{+86~18810500641}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{zhangqi@mail.bnu.edu.cn}                    % 可选项、如不需要可删除本行
+%\homepage{dinever.com}                  % 可选项、如不需要可删除本行
+\extrainfo{求职意向：数据挖掘、数据分析方向}                  % 可选项、如不需要可删除本行
+\photo[64pt]{test.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育背景}
+\cventry{2010 -- 2014}{本科}{国际关系学院信息科技系}{信息管理与信息系统}{}{}  % 第3到第6编码可留白
+\cventry{2014 -- 2017}{硕士}{北京师范大学系统科学学院}{系统工程}{}{}  % 第3到第6编码可留白
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{社区}
+\cventry{Blog}{\url{https://www.cnblogs.com/zhangqifire/}}{技术博客}{}{}{}
+\cventry{GitHub}{\url{http://github.com/zhangqifire}}{}{}{}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2015--2016}
+{鱼群轨迹追踪算法研究}
+{Matlab＋opencv＋c}
+{自然基金项目}{}
+{鱼群轨迹追踪算法是使用模式识别技术进行目标追踪，包括目标检测，数据关联等技术，我才用了神经网络方法进行目标检测，使用匈牙利算法讲数据关联转化为线性分配问题，从而解决鱼群追踪问题。目前算法能够实现对各种应用环境下遮挡较少的群体进行轨迹追踪。
+\\使用统计物理的方法对鱼群实验数据进行分析，研究信息在其中的作用规律，探究鱼群的运动模型
+}
+
+\cventry{2014}
+{基于AHP和协同过滤算法的电影推荐系统}
+{Jsp＋Servlet}
+{毕业设计}{}
+{基于Java和mysql数据库实现的一个电影推荐网站，使用了AHP层次分析法解决协同过滤算法的冷启动问题，实现了基本的电影推荐功能。}
+
+\cventry{2012}
+{基于android的手机无线点餐系统}
+{Java＋sqlite}
+{团队项目}{}
+{本项目在Android2.3手机系统上实现无线点餐，实现了手机端的点餐功能和服务器端的管理查看功能，我主要负责手机端的界面设计和功能实现。最后我们的项目参加2012年大学生创新计划获得国际关系学院优秀项目奖}
+
+\section{语言技能}
+\cvline{英语}{\textbf{CET-6: 532}，擅长读写，经常阅读英文文档、教程，研究生期间经常与外国专家交流。}
+\cvline{普通话}{母语}
+
+\section{专业技能}
+\cvline{编程语言}{Python == Matlab >   Java  > C＃}
+\cvline{数据库}{MySQL, Sqlserver}
+\cvline{工具}{LaTeX}
+
+\section{获得奖励} % (fold)
+\cventry{2013}
+{高教杯全国大学生数学建模竞赛北京市甲组二等奖}{}{}{}{}
+\cventry{2014}
+{美国数学建模竞赛二等奖}{}{}{}{我个人负责论文的方法实现部分}
+\cventry{2015}
+{全国研究生数学建模竞赛三等奖}{}{}{}{竞赛使用遗传算法队列车行驶方案进行了优化。}
+\cventry{2015}
+{2015年北京师范大学研究生学业奖学金一等奖}{}{}{}{}
+
+\section{校园经历} % (fold)
+\cventry{2012--2013}
+{国际关系学院电脑维修队副队长}{}{}{}{和几个同学一起成立了维修队，免费为同学清理电脑。在任期间负责帮同学们解决电脑问题，主要是各类软件的破解安装和电脑重装系统等问题。}
+\cventry{2014--2016}
+{系统科学学院2014硕士班班长}{}{}{}{从入学以来一直担任所在硕士班班长兼任团支书，多次组织各类班级活动，从活动准备到撰写项目基金申请书和项目总结均能较好的组织完成，任期带领所在班级获得2015年优秀班集体称号和优秀团支部二等奖。}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
